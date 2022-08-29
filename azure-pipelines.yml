@@ -33,6 +33,7 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
+
 - task: AzureRMWebAppDeployment@4
   inputs:
     ConnectionType: 'AzureRM'
@@ -43,4 +44,5 @@ steps:
 #    package: '$(Build.ArtifactStagingDirectory)'
 #    package: '$(Build.SourcesDirectory)'    
 #packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
-    packageForLinux: '$(Build.ArtifactStagingDirectory)/*.zip'
+#    packageForLinux: '$(Build.ArtifactStagingDirectory)/*.zip'
+    package: '$(Build.ArtifactStagingDirectory)/*.zip'    
