@@ -41,4 +41,6 @@ steps:
     appType: 'webApp'
     WebAppName: 'mitsu0824webapp'
 #    package: '$(Build.ArtifactStagingDirectory)'
-    package: '$(Build.SourcesDirectory)'    
+#    package: '$(Build.SourcesDirectory)'    
+#packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
+packageForLinux: '$(Build.ArtifactStagingDirectory)/*.zip'
