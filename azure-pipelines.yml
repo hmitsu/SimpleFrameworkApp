@@ -40,4 +40,5 @@ steps:
     azureSubscription: 'test082'
     appType: 'webApp'
     WebAppName: 'mitsu0824webapp'
-    package: '$(Build.ArtifactStagingDirectory)'
+#    package: '$(Build.ArtifactStagingDirectory)'
+    package: '$(Build.SourcesDirectory)'    
